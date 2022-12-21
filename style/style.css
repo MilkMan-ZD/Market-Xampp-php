@@ -1,0 +1,155 @@
+body {
+    background-color: rgb(243, 242, 242);
+}
+
+.container {
+    width: 100%;
+    min-height: 600px;
+}
+
+.cards {
+    padding: 50px 50px 50px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    /*grid-template-rows: 200px 200px 200px 200px 200px;*/
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.cards_str {
+    max-width: 1200px;
+}
+
+.card_item {
+    text-align: center;
+    padding: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.050);
+    transition: .50s;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.card_imgStr {
+    max-width: 500px;
+    width: auto;
+}
+
+@media (max-width:992px) {
+    .card_imgStr {
+        width: 90%;
+    }
+}
+
+.card_itemStr {
+    text-align: center;
+    align-items: center;
+    display: flex;
+    padding: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.050);
+    transition: .50s;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.card_itemTwo {
+    width: 600px;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.050);
+    transition: .50s;
+    border-radius: 20px;
+    background-color: white;
+}
+
+@media (max-width:1280px) {
+    .card_itemTwo {
+        width: 400%;
+    }
+}
+
+@media (max-width:992px) {
+    .card_itemTwo {
+        width: 90%;
+    }
+}
+
+.card_description {
+    color: black;
+}
+
+.card_item:hover {
+    color: orange;
+}
+
+.card_img {
+    max-width: 150px;
+    width: 90%;
+}
+
+.card_price {
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+
+.btn {
+    border: 2px solid orange;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 16px;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 36px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 50px;
+    transition: .50s;
+}
+
+.btn:hover {
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.050);
+    background-color: orange;
+    color: white;
+}
+
+.knop {
+    display: flex;
+    justify-content: center;
+}
+
+.akak {
+    display: flex;
+    gap: 20px;
+}
+
+@media (max-width:1440px) {
+    .akak {
+        flex-direction: column;
+    }
+}
+
+@media (max-width:992px) {
+    .cards {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .container {
+        background-color: rgb(243, 242, 242);
+    }
+}
+
+@media (max-width: 768px) {
+    .cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
